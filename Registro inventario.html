@@ -1,0 +1,70 @@
+<html>
+<head>
+    <title>Registro de Medicamentos Inventario </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        div {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+        }
+        h2 {
+            color: #555;
+        }
+        input[type="text"],
+        input[type="number"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        p {
+            margin-top: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Registro de Medicamentos Inventario</h1>
+    <div>
+        <h2>Registrar Medicamento</h2>
+        <input type="text" id="nombre" placeholder="Nombre">
+        <input type="number" id="cantidad" placeholder="Cantidad">
+        <input type="text" id="ubicacion" placeholder="Ubicacion">
+        <button onclick="registrarMedicamento()">Registrar Medicamento</button>
+    </div>
+    <div>
+        <h2>Obtener Medicamento</h2>
+        <input type="number" id="indice" placeholder="Indice">
+        <button onclick="obtenerMedicamento()">Obtener Medicamento</button>
+        <p id="informacionMedicamento"></p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.3.6/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
